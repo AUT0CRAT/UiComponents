@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Inteliment</string>
+    <string name="title_tab_views">Views</string>
+    <string name="title_tab_navigate">Navigate</string>
+    <string name="msg_selected_item">Selected %s</string>
+    <string name="btn_red">Red</string>
+    <string name="btn_blue">Blue</string>
+    <string name="btn_green">Green</string>
+    <string name="fragment_one">Fragment 1</string>
+    <string name="fragment_two">Fragment 2</string>
+    <string name="fragment_three">Fragment 3</string>
+    <string name="fragment_four">Fragment 4</string>
+    <string name="fragment_five">Fragment 5</string>
+    <string name="clicked_on">Clicked on %1$s</string>
+    <string name="label_item">item %1$d</string>
+    <string name="msg_no_selected_item">No Item Selected</string>
+    <string name="mode_of_transport">Mode of Transport:</string>
+    <string name="btn_navigate">Navigate</string>
+    <string name="msg_car">Car - %1$s</string>
+    <string name="msg_train">Train - %1$s</string>
+
+    <string name="direction_uri">geo:%1$f,%2$f?q=%1$f,%2$f</string>
+    <string name="error_no_network">Failed to Connect. Tap to retry.</string>
+    <string name="btn_retry">Retry</string>
+    <string name="error_no_maps">Maps not installed</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="?android:listDivider"
+        android:dividerPadding="@dimen/divider_padding"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        >
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/component_bottom_margin"
+            >
+            <LinearLayout
+                android:id="@+id/llHorizontalViewContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                />
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/component_bottom_margin"
+            android:layout_marginTop="@dimen/component_margin"
+            >
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vpFragments"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_pager"
+                >
+                <com.itsronald.widget.ViewPagerIndicator
+                    android:id="@+id/pageIndicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:gravity="center_vertical"
+                    app:selectedDotColor="@color/colorAccent"
+                    />
+            </android.support.v4.view.ViewPager>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/component_bottom_margin"
+            android:layout_marginTop="@dimen/component_margin"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            >
+
+            <TextView
+                android:id="@+id/tvAligned1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView1"
+                />
+            <TextView
+                android:id="@+id/tvAligned2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TextView2"
+                />
+            <TextView
+                android:id="@+id/tvAligned3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="TextView3"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_pager"
+            android:layout_marginBottom="@dimen/component_bottom_margin"
+            android:layout_marginTop="@dimen/component_margin"
+            >
+            <TextView
+                android:id="@+id/tvSelectedItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/msg_no_selected_item"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_pager"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_red"
+                />
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_green"
+                />
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_blue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
